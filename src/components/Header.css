@@ -1,0 +1,64 @@
+/* src/components/Header.css */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+}
+
+.navbar-toggler svg {
+  font-size: 1.5rem;
+}
+
+.btn-login {
+  background-color: #007bff;
+  color: white;
+  border-radius: 20px;
+  padding: 6px 16px;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  background-image: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Make dropdown open on hover, not just click */
+.hoverable-dropdown {
+  position: relative;
+}
+
+.hoverable-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  z-index: 1000;
+  border-color: white;
+}
+
+.hoverable-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.hoverable-dropdown .dropdown-item {
+  color: #333;
+  padding: 8px 16px;
+}
+
+.hoverable-dropdown .dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+.hover-text-red {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.hover-text-red:hover {
+  color: #8B0000 !important;
+}
+
+.text-red {
+  color: #800517 !important;
+}

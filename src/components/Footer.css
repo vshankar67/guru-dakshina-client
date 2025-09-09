@@ -1,0 +1,19 @@
+/* src/components/Footer.css */
+footer a {
+  text-decoration: none;
+}
+
+.footer-logo {
+  height: 250px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.store-badge {
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.store-badge:hover {
+  transform: scale(1.05);
+}

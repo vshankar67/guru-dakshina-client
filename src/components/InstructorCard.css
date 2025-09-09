@@ -1,0 +1,53 @@
+.gap-tb-text {
+    padding: 115px 0 112px;
+}
+
+.edu-team-grid {
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.edu-team-grid .thumbnail img {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+.edu-team-grid .content {
+    padding: 20px;
+}
+
+.edu-team-grid .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #181818;
+}
+
+.edu-team-grid .designation {
+    font-size: 14px;
+    color: #ac3514;
+}
+
+.section-title .title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-title .pre-title {
+    font-size: 14px;
+    color: var(--color-primary);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.shape-line {
+    display: inline-block;
+    margin-top: 10px;
+}

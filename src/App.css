@@ -1,0 +1,28 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.main-content {
+  background-color: #f0f4f8;
+  min-height: calc(100vh - 200px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  background-color: #f0f4f8;
+}
+.mb-4{
+  text-align: center;
+}
+
+.mb-3{
+  text-align: center;
+}
+
+.bg-schollership{
+  background-color: #FF7F7F7F;
+}
