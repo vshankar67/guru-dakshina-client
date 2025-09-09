@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -8,6 +8,26 @@ import { Facebook, Twitter, Instagram, YouTube, WhatsApp, Telegram, LinkedIn, Ph
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleCloseMenu = () => {
+  setMenuOpen(false);
+  };
+
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <header>
@@ -39,8 +59,8 @@ const Header = () => {
       </div>
 
       {/* Navigation */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-light px-3">
-        <Link to="/" className="navbar-brand">
+      <nav ref={navRef} className="navbar navbar-expand-lg navbar-light bg-light px-3">
+        <Link to="/" className="navbar-brand" onClick={handleCloseMenu}>
           <img
             src={logo}
             alt="Guru Dakshina"
@@ -55,28 +75,28 @@ const Header = () => {
         <div className={`collapse navbar-collapse ${menuOpen ? 'show' : ''}`}>
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
-              <Link to="/" className="nav-link"> <strong> Home</strong></Link>
+              <Link to="/" className="nav-link" onClick={handleCloseMenu}> <strong> Home</strong></Link>
             </li>
 
             <li className="nav-item dropdown hoverable-dropdown">
-              <Link to="/about" className="nav-link dropdown-toggle"> <strong>About</strong></Link>
+              <Link to="/about" className="nav-link dropdown-toggle" onClick={handleCloseMenu}> <strong>About</strong></Link>
                 <ul className="dropdown-menu" aria-labelledby="aboutDropdown">
                 <li>
-                  <Link className="dropdown-item" to="/about#director"> <strong> Director's Message</strong></Link>
+                  <Link className="dropdown-item" to="/about#director" onClick={handleCloseMenu}> <strong> Director's Message</strong></Link>
                 </li>
                 <li>
-      <           Link className="dropdown-item" to="/#scholarship"> <strong> Scholarship</strong></Link>
+                  <Link className="dropdown-item" to="/#scholarship" onClick={handleCloseMenu}> <strong> Scholarship</strong></Link>
                 </li>
                 </ul>
             </li>
             <li className="nav-item">
-              <Link to="/courses" className="nav-link"> <strong> Courses</strong></Link>
+              <Link to="/courses" className="nav-link" onClick={handleCloseMenu}> <strong> Courses</strong></Link>
             </li>
             <li className="nav-item">
-              <Link to="/gallery" className="nav-link"> <strong> Gallery</strong></Link>
+              <Link to="/gallery" className="nav-link" onClick={handleCloseMenu}> <strong> Gallery</strong></Link>
             </li>
             <li className="nav-item">
-              <Link to="/contact" className="nav-link"> <strong> Contact</strong></Link>
+              <Link to="/contact" className="nav-link" onClick={handleCloseMenu}> <strong> Contact</strong></Link>
             </li>
           </ul>
           
