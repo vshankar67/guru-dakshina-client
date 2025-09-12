@@ -12,6 +12,7 @@ import Contact from './pages/Contact';
 import LoginRedirect from './pages/LoginRedirect';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import FloatingChatBot from './components/FloatingChatBot.jsx';
 
 
 function App() { 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/login" element={<LoginRedirect />} />
       </Routes>
       </main>
+      <FloatingChatBot />
       <Footer />
     
     </>

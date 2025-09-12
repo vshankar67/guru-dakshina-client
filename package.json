@@ -16,6 +16,7 @@
     "@headlessui/react": "^2.2.7",
     "@mui/icons-material": "^7.3.2",
     "@mui/material": "^7.3.2",
+    "@mui/styles": "^6.5.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.8",
     "framer-motion": "^12.23.12",

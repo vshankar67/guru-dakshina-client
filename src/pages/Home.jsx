@@ -3,6 +3,8 @@ import FeaturesSection from "../components/FeaturesSection";
 import ContactCTA from "../components/ContactCTA";
 import TestimonialBoxes from "../components/TestimonialBoxes";
 import VisionFeatures from "../components/VisionFeatures";
+import { Link } from "react-router-dom";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const Home = () => {
   return (
@@ -12,27 +14,47 @@ const Home = () => {
        <FeaturesSection />
       <div className="container mt-5">
             
-      <section className="text-center" data-aos="fade-up">
-        <h1 className="display-4 fw-bold">Welcome to Guru Dakshina</h1>
-        <p className="lead">Your trusted platform for mastering Mathematics from Class 7 to 12.</p>
+      <section className="text-center color-green" data-aos="fade-up" style={{width: '100vw', 
+          marginLeft: 'calc(-50vw + 50%)',
+          padding: '40px 20px',  
+          boxSizing: 'border-box'}}>
+        <h1 className="display-4 fw-bold"><b>Welcome to Guru Dakshina</b></h1>
+        <h5 className=""><b>Your trusted platform for mastering Mathematics from Class 7 to 12.</b></h5>
       </section>
       
 
       {/* Key Indicators */}
       
-      <section className="mt-5" data-aos="fade-up">
-        <h2 className="h1 mb-3">Key Highlights</h2>
-        <div className="text-center" style={{ backgroundColor: '#66d8d8ff', padding: '20px', borderRadius: '8px', }}>
-          <ul style={{ display: 'inline-block', textAlign: 'left' }}>
-          <li><strong> Foundation Courses for all boards (CBSE, ICSE, State Boards)</strong></li>
-          <li><strong> Special focus on Conceptual Clarity & Exam Preparation</strong></li>
-          <li><strong> Expert Faculty with over 20+ years of experience</strong></li>
-          <li><strong> Flexible Batches (Morning / Evening)</strong></li>
-          <li><strong> 100% Online and Interactive Sessions</strong></li>
+      <section className="" data-aos="fade-up">
+        <h2 className="h1 mb-3"><b>Key Highlights</b></h2>
+        <div className="color-orange" style={{width: '100vw', 
+          marginLeft: 'calc(-50vw + 50%)',
+          padding: '40px 20px',  
+          boxSizing: 'border-box'}}>
+        <div
+          className="text-center container"
+          style={{
+      
+          padding: '20px',
+          borderRadius: '8px',
+        }}>
+        <ul style={{ display: 'inline-block', textAlign: 'left', margin: 0, paddingLeft: '20px' }}>
+          <li><strong>Comprehensive Foundation Courses</strong> – Tailored for CBSE, ICSE, and State Board syllabi.</li>
+          <li><strong>Concept-Driven Learning</strong> – Emphasis on building a deep understanding of core concepts to excel in school and beyond.</li>
+          <li><strong>Experienced Faculty</strong> – Learn from subject experts with over 20 years of proven teaching success.</li>
+          <li><strong>Flexible Class Timings</strong> – Morning and evening batches available to suit different schedules.</li>
+          <li><strong>Fully Online & Interactive</strong> – Engage in live, two-way sessions from the comfort of your home.</li>
         </ul>
+        </div>
+        <div className="text-center mt-4">
+        <Link to="/courses" className="btn btn-primary btn-login mt-4">
+              Know more <ArrowForwardIcon />
+         </Link>
+         </div>
         </div>
         
       </section>
+
       
 
       {/* Testimonials (Placeholder) */}
@@ -45,14 +67,51 @@ const Home = () => {
 
       {/* Features Section (Placeholder) */}
       
-      <section className="mt-5 text-center" data-aos="fade-up">
-        <h2 className="h1 mb-3">Why Choose Us?</h2>
-        <p>Affordable and comprehensive learning experience to students</p>
+      <section className="mt-5 text-center why-us" data-aos="fade-up" 
+      style={
+        { 
+          width: '100vw', 
+          marginLeft: 'calc(-50vw + 50%)',
+          padding: '40px 20px',  
+          boxSizing: 'border-box'
+        }}>        
+
+        <div style={{
+            
+            
+            padding: '20px',
+            borderRadius: '8px',
+            marginBottom: '20px'
+          }}>
+            <h2 className="mb-3">Why Choose Us?</h2> 
+          </div>
+
+        
+        <div style={{
+          padding: '20px',
+          borderRadius: '8px',
+          fontFamily: 'Arial, sans-serif',
+          lineHeight: '1.6'
+        }}>
+          By the end of this program, students gain not only
+          <span className="h5" style={{color: 'yellow', fontWeight: 'bold'}}> academic excellence in school exams </span> 
+          butalso the 
+          <span className="h5" style={{color: 'yellow', fontWeight: 'bold'}}> to perform in competitive examinations.</span>
+          This course lays the perfect foundation for
+          <span className="h5" style={{color: 'yellow', fontWeight: 'bold'}}> future success in JEE, NEET, and beyond.</span>
+        </div>
       </section>
       
 
       
-      <section id="scholarship" className="container py-5 bg-schollership" data-aos="fade-up">
+      <section id="scholarship" className=" py-5 bg-schollership" data-aos="fade-up"
+      style={
+        { 
+          width: '100vw', 
+          marginLeft: 'calc(-50vw + 50%)',
+          padding: '40px 20px',  
+          boxSizing: 'border-box'
+        }}>
         <h2 className="h1 mb-4">Scholarship Program</h2>
         <p className="text-center ">
           Guru Dakshina offers scholarships for deserving students based on merit and need. Apply now to

@@ -36,13 +36,53 @@ const Contact = () => {
   };
 
   return (
-    <div className="container mt-5">
-      <h1 className="fw-bold text-center mb-20">Contact Us</h1>
+    <div className="container mt-5 ">
+      <h1 className="fw-bold text-center mb-20"> <div style={{
+        backgroundColor: 'black',
+        color: 'white',
+        padding: '20px 30px',
+        borderRadius: '8px',
+        marginBottom: '20px',
+        display: 'inline-block',
+        textAlign: 'center'  
+        }}>Contact Us</div></h1>
+      <br />
+      <br />
+
+    <div className="why-us" style={{
+      
+      
+      padding: '20px',
+      borderRadius: '8px',
+      fontFamily: 'Arial, sans-serif',
+      lineHeight: '1.6'
+    }}>
+      We’re here to help you at every step of your learning journey. Whether you have questions
+      about our <span className="h5" style={{color: 'yellow', fontWeight: 'bold'}}>courses</span>, 
+      <span className="h5" style={{color: 'yellow', fontWeight: 'bold'}}> online classes</span>, 
+      <span className="h5" style={{color: 'yellow', fontWeight: 'bold'}}> admissions</span>, or 
+      <span className="h5" style={{color: 'yellow', fontWeight: 'bold'}}> technical support</span>, 
+      feel free to reach out to us.
+    </div>
+    
+    <br />
+    <br />
 
       <div className="row">
         {/* Contact Form */}
-        <div className="col-md-6 mb-4" data-aos="fade-right">
-          <h2 className="h5 mb-3">Send Us a Message</h2>
+        <div className="col-md-6 mb-4 " data-aos="fade-right">
+
+          <div style={{
+            backgroundColor: 'black',
+            color: 'white',
+            padding: '20px',
+            borderRadius: '8px',
+            marginBottom: '20px'
+          }}>
+            <h2 className="mb-3">Send Us a Message</h2> 
+          </div>
+          
+
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
               <label htmlFor="name" className="form-label">Full Name</label>
@@ -75,7 +115,15 @@ const Contact = () => {
 
         {/* Contact Information */}
         <div className="col-md-6 mb-4" data-aos="fade-left">
-          <h2 className="h5 mb-3">We're Always Eager to Hear From You!</h2>
+          <div style={{
+            backgroundColor: 'black',
+            color: 'white',
+            padding: '20px',
+            borderRadius: '8px',
+            marginBottom: '20px'
+        }}>
+            <h2 className="mb-3" style={{ margin: 0 }}>We're Always Eager to Hear From You!</h2>
+        </div>
           <br />
           <br />
           

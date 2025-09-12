@@ -12,7 +12,16 @@ const Gallery = () => {
 
   return (
     <div className="container mt-5">
-      <h1 className="fw-bold text-center mb-4">Gallery</h1>
+      <h1 className="fw-bold text-center mb-4"> <div style={{
+        backgroundColor: 'black',
+        color: 'white',
+        padding: '20px 30px',
+        borderRadius: '8px',
+        marginBottom: '20px',
+        display: 'inline-block',
+        textAlign: 'center'  
+        }}>Gallery 
+        </div></h1>
       <p className="text-center mb-5">
         Explore some glimpses of our classes, events, achievements, and happy students.
       </p>

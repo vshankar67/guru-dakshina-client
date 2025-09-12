@@ -3,7 +3,12 @@ import './ContactCTA.css'; // Link to your CSS
 
 const ContactCTA = () => {
     return (
-        <div className="cta-section red-gradient-bg">
+        <div className="cta-section red-gradient-bg"  
+        style={{
+            width: '100vw',
+            marginLeft: 'calc(-50vw + 50%)', // cancels container centering
+            boxSizing: 'border-box'
+        }}>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-xl-10">

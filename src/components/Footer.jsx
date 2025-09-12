@@ -4,15 +4,13 @@ import './Footer.css';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-dark text-white py-4 mt-">
+    <footer className="bg-dark text-white  ">
       <div className="container d-flex justify-content-between align-items-center flex-wrap">
         <div>
           <h5>Guru Dakshina</h5>
           <p>Online Coaching for Class 7–12</p>
           <p>Specialized in Mathematics</p>
-          <p>
-            Visit: <a href="https://mathematicsguru.in" className="text-warning" target="_blank">mathematicsguru.in</a>
-          </p>
+          
         </div>
         <div className="social-icons mt-3">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="me-3 text-white">
